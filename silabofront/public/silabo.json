@@ -1,33 +1,160 @@
 {
-    "datosGenerales": {
-      "asignatura": "Desarrollo Web",
-      "ciclo": "VII",
-      "codigo": "INF784",
-      "creditos": 4
+  "datosGenerales": {
+    "asignatura": "Desarrollo Web",
+    "ciclo": "VII",
+    "codigo": "INF784",
+    "creditos": 4
+  },
+  "informacionCurso": {
+    "facultad": "Ingenierías y Arquitectura",
+    "semestre": "VII",
+    "areaFormacion": "Estudios de Especialidad",
+    "tipoCurso": "Obligatorio",
+    "carreraProfesional": "Ingeniería de Software",
+    "creditos": 4,
+    "prerequisito": "Base de Datos II",
+    "periodoLectivo": "2025 - I",
+    "horasTeoria": 2,
+    "horasPractica": 4,
+    "codigoCurso": "3.7.4.21",
+    "docente": "Richart Smith Escobedo Quispe",
+    "correo": "r.escobedo@ulasalle.edu.pe"
+  },
+  "competenciaCurso": "Al término del presente curso, el estudiante estará en condiciones de: - Utilizar las recomendaciones de la W3C para el desarrollo de aplicaciones web.\n- Conocer un framework MVC para el desarrollo de aplicaciones web. - Conocer los criterios de seguridad OWASP cuando se desarrollan aplicaciones web.",
+  "competenciaPerfil": "Desarrollar, mantener y evaluar servicios y sistemas software que satisfagan todos los requisitos del usuario y se comporten de forma fiable y eficiente, sean asequibles de desarrollar y mantener y cumplan normativas de calidad, aplicando las teorías, principios, métodos y prácticas de la informática.",
+  "competenciasPrevias": [
+    "Conocimientos básicos de matemáticas discretas...",
+    "Comprensión de la responsabilidad y ética profesional",
+    "Gestionar el desarrollo de sistemas de software",
+    "Capacidad de aprender y actualizarse permanentemente"
+  ],
+  "sumilla": "El curso contempla los siguientes temas: Programación del lado del servidor...",
+  "unidades": [
+    {
+      "titulo": "UNIDAD I",
+      "denominacion": "Tecnologías para el desarrollo de aplicaciones web.",
+      "fechaInicio": "Del 10 de marzo",
+      "fechaFin": "05 de abril del 2025",
+      "capacidad": "El estudiante conoce y utiliza reponsablemente las tecnologías para el desarrollo de aplicaciones web.",
+      "semanas": [
+        {
+          "numero": 1,
+          "contenido": "Presentación del Curso. Sílabo. Metodología. Sistema de Evaluación.\nHistoria. Arquitectura. Protocolo HTTP.\nInicio Rápido de un Servicio de alojamiento de Base datos en la Nube.\nInicio rápido en Frameworks Front-End."
+        },
+        {
+          "numero": 2,
+          "contenido": "Tecnologías de Desarrollo Web\nEditor de texto: Vim. IDE: VSCode.\nFront-End: Estándares Web, frameworks.\nBack-End: Lenguajes de Programación, frameworks.\nSistema de control de versiones: Git. (GitHub)."
+        },
+        {
+          "numero": 3,
+          "contenido": "Despliegue de aplicaciones web desde contenedores con Docker."
+        },
+        {
+          "numero": 4,
+          "contenido": "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web"
+        }
+      ]
     },
-    "informacionCurso": {
-      "facultad": "Ingenierías y Arquitectura",
-      "semestre": "VII",
-      "areaFormacion": "Estudios de Especialidad",
-      "tipoCurso": "Obligatorio",
-      "carreraProfesional": "Ingeniería de Software",
-      "creditos": 4,
-      "prerequisito": "Base de Datos II",
-      "periodoLectivo": "2025 - I",
-      "horasTeoria": 2,
-      "horasPractica": 4,
-      "codigoCurso": "3.7.4.21",
-      "docente": "Richart Smith Escobedo Quispe",
-      "correo": "r.escobedo@ulasalle.edu.pe"
+    {
+      "titulo": "UNIDAD II",
+      "denominacion": "Desarrollo Front-End",
+      "fechaInicio": "Del 08 de abril",
+      "fechaFin": "03 de mayo del 2025",
+      "capacidad": "El estudiante diseña y desarrolla interfaces de usuario aplicando tecnologías front-end modernas.",
+      "semanas": [
+        {
+          "numero": 5,
+          "contenido": "HTML5 y CSS3 avanzado. Maquetación responsive."
+        },
+        {
+          "numero": 6,
+          "contenido": "JavaScript moderno. DOM. Eventos. AJAX."
+        },
+        {
+          "numero": 7,
+          "contenido": "Frameworks JS: Vue.js, React. Componentes y estado."
+        },
+        {
+          "numero": 8,
+          "contenido": "Herramientas de build y empaquetado: Webpack, Vite."
+        },
+        {
+          "numero": 9,
+          "contenido": "Examen Parcial"
+        }
+      ]
+    }
+  ],
+  "actividades": [
+    {
+      "titulo": "Investigación formativa",
+      "descripcion": "Los estudiantes investigan en la documentación oficial de proyectos de plataformas para el desarrollo web."
     },
-    "competenciaCurso": "Al término del presente curso, el estudiante estará en condiciones de: - Utilizar las recomendaciones de la W3C para el desarrollo de aplicaciones web.\n- Conocer un framework MVC para el desarrollo de aplicaciones web. - Conocer los criterios de seguridad OWASP cuando se desarrollan aplicaciones web.",
-    "competenciaPerfil": "Desarrollar, mantener y evaluar servicios y sistemas software que satisfagan todos los requisitos del usuario y se comporten de forma fiable y eficiente, sean asequibles de desarrollar y mantener y cumplan normativas de calidad, aplicando las teorías, principios, métodos y prácticas de la informática.",
-    "competenciasPrevias": [
-      "Conocimientos básicos de matemáticas discretas...",
-      "Comprensión de la responsabilidad y ética profesional",
-      "Gestionar el desarrollo de sistemas de software",
-      "Capacidad de aprender y actualizarse permanentemente"
-    ],
-    "sumilla": "El curso contempla los siguientes temas: Programación del lado del servidor..."
-  }
-  
+    {
+      "titulo": "Responsabilidad Social universitaria",
+      "descripcion": "Los estudiantes desarrollarán aplicaciones Web utilizando tecnologías web y plataformas para el Front-End y Back-End que resuelven el requerimiento de presentación de documentos académicos(Sílabo) y asignaciones académicas a docentes(Reparto de carga académica)."
+    }
+  ],
+  "criteriosEvaluacion": [
+    {
+      "id": 1,
+      "evaluacion": "Evidencia 1",
+      "peso": "El promedio de la evidencia 1 y la evidencia 2 corresponde al 20% de la nota final.",
+      "fechaConsolidacion": "Hasta el 05 de abril.",
+      "descripcion": [
+        "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web.",
+        "Exposiciones individuales y grupales."
+      ]
+    },
+    {
+      "id": 2,
+      "evaluacion": "Evidencia 2",
+      "peso": "",
+      "fechaConsolidacion": "Hasta el 26 de abril.",
+      "descripcion": [
+        "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web.",
+        "Exposiciones individuales y grupales."
+      ]
+    },
+    {
+      "id": 3,
+      "evaluacion": "EXAMEN PARCIAL",
+      "peso": "La evaluación parcial corresponde al 30% de la nota final.",
+      "fechaConsolidacion": "Evaluación del 05 al 10 de mayo\nIngreso de notas hasta el 18 de mayo.",
+      "descripcion": [
+        "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web",
+        "Examen - rúbrica"
+      ]
+    },
+    {
+      "id": 4,
+      "evaluacion": "Evidencia 3",
+      "peso": "El promedio de la evidencia 3 y la evidencia 4 corresponde al 20% de la nota final.",
+      "fechaConsolidacion": "Hasta el 31 de mayo.",
+      "descripcion": [
+        "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web.",
+        "Exposiciones individuales y grupales."
+      ]
+    },
+    {
+      "id": 5,
+      "evaluacion": "Evidencia 4",
+      "peso": "",
+      "fechaConsolidacion": "Hasta el 21 de junio.",
+      "descripcion": [
+        "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web.",
+        "Exposiciones individuales y grupales."
+      ]
+    },
+    {
+      "id": 6,
+      "evaluacion": "EXAMEN FINAL",
+      "peso": "La evaluación final corresponde al 30% de la nota final.",
+      "fechaConsolidacion": "Evaluación del 30 de junio hasta el 05 de julio\nIngreso de notas hasta el 06 de julio.\nEntrega y revisión de exámenes 07 de julio.",
+      "descripcion": [
+        "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web",
+        "Examen - rúbrica"
+      ]
+    }
+  ]
+}

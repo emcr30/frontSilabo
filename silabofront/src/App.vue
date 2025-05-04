@@ -2,6 +2,7 @@
   <div>
     <Silabo />
     <UnidadesAprendizaje />
+    <Actividades />
   </div>
 </template>
 
