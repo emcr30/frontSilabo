@@ -518,27 +518,52 @@ export default {
     },
     
     agregarSemana(unidad) {
-      const siguienteNumero = this.siguienteSemana(unidad);
+      const siguienteNumero = this.obtenerSiguienteSemanaGlobal();
       
-      // Si la siguiente semana es 9, añadirla como "Examen Parcial"
-      if (siguienteNumero === 9) {
+      // No permitir duplicado de semana 9 (Examen Parcial)
+      if (siguienteNumero === 9 && this.existeSemana9()) {
         unidad.semanas.push({
-          numero: 9,
-          contenido: 'Examen Parcial'
+          numero: siguienteNumero,
+          contenido: '' // No duplicar el Examen Parcial
         });
       } else {
         unidad.semanas.push({
           numero: siguienteNumero,
-          contenido: ''
+          contenido: siguienteNumero === 9 ? 'Examen Parcial' : ''
         });
       }
       
       // Actualizar la última semana global
       this.ultimaSemana = Math.max(this.ultimaSemana, siguienteNumero);
+
+      // Reenumerar después de agregar
+      this.renumerarSemanas();
     },
     
     eliminarSemana(unidad, index) {
       unidad.semanas.splice(index, 1);
+      this.renumerarSemanas();
+    },
+
+    renumerarSemanas() {
+      let contador = 1;
+      this.unidades.forEach(unidad => {
+        unidad.semanas.forEach(semana => {
+          semana.numero = contador++;
+
+          // Asegura que la semana 9 siempre sea "Examen Parcial"
+          if (semana.numero === 9) {
+            semana.contenido = 'Examen Parcial';
+          }
+        });
+      });
+      this.ultimaSemana = contador - 1;
+    },
+
+    existeSemana9() {
+      return this.unidades.some(unidad =>
+        unidad.semanas.some(semana => semana.numero === 9)
+      );
     },
     
     agregarUnidad() {
